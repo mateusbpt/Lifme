@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler navbar-toggler-right float-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="lifme-navbar"
+    aria-expanded="false">
+    <i class="material-icons">view_headline</i>
+  </button>
+  <div class="collapse navbar-collapse justify-content-md-center" id="lifme-navbar" [ngbCollapse]="!isNavbarCollapsed">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/users">USUÁRIOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/feedback">FEEDBACK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/challenges">DESAFIOS</a>
+      </li>
+    </ul>
+  </div>
+</nav>

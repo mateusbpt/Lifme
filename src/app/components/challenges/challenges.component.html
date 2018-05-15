@@ -1,0 +1,38 @@
+<app-info-navbar></app-info-navbar>
+<app-navbar></app-navbar>
+<div class="container mt-4">
+  <div class="title-page">Desafios</div>
+  <div class="row">
+    <div class="col-xs-12 com-sm-12 col-md-4 col-lg-4 mt-4">
+      <div class="card">
+        <img class="card-img-top" src="https://i.ytimg.com/vi/eFn_Dh02-UY/maxresdefault.jpg">
+        <div class="card-body">
+          <h5 class="card-title">GOKU</h5>
+          <p class="card-text">Desafios concluídos: 5</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xs-12 com-sm-12 col-md-8 col-lg-8 mt-4">
+      <div class="float-right">Quantidade desafios disponíveis: 2</div>
+      <div class="card mt-5">
+        <img class="card-img-top" src="http://www.sportlife.com.mx/sites/default/files/2016-06/caminar%20sl%20%281%29.jpg">
+        <div class="card-body">
+          <h5 class="card-title">
+            DESAFIO 
+            <div class="card-title text-danger" *ngIf="active">TERMINA EM 01:45</div> 
+          </h5>       
+          <p class="card-text">Faça uma caminhada de no mínimo 15 minutos</p>
+        </div>
+        <div class="card-body" *ngIf="!active">
+            <button type="button" class="btn btn-primary btn-sm" (click)="ativar()">Aceitar</button>
+            <button class="btn btn-danger btn-sm ml-2">Rejeitar</button>
+        </div>
+        <div class="card-body" *ngIf="active">
+            <button type="button" class="btn btn-primary btn-sm" (click)="ativar()">Concluir</button>
+            <button class="btn btn-danger btn-sm ml-2">Desistir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
