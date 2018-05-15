@@ -9,7 +9,9 @@ const routes: Routes = [
   { path: '', component: ProfileComponent },
   { path: 'users', component: UsersComponent },
   { path: 'challenges', component: ChallengesComponent },
-  { path: 'feedback', component: FeedbackComponent }
+  { path: 'feedback', component: FeedbackComponent },
+  { path: 'friends', component: ChallengesComponent },
+  { path: 'groups', component: FeedbackComponent }
 ];
 
 @NgModule({
