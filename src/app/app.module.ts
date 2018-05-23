@@ -11,6 +11,9 @@ import { NavbarComponent } from './components/navbars/navbar/navbar.component';
 import { UsersComponent } from './components/users/users.component';
 import { ChallengesComponent } from './components/challenges/challenges.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
+import { GroupComponent } from './components/group/group.component';
+import { FriendsComponent } from './components/friends/friends.component';
+import { GroupsComponent } from './components/groups/groups.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
     InfoNavbarComponent,
     UsersComponent,
     ChallengesComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    GroupComponent,
+    FriendsComponent,
+    GroupsComponent
   ],
   imports: [
     BrowserModule,
