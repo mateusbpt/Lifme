@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light fixed-top bg-light">
     <ul class="nav navbar-nav">
         <li class="nav-item">
             <a class="title-page navbar-brand" routerLink="/">LIFME</a>
@@ -8,7 +8,7 @@
         <li class="nav-item" ngbDropdown>
             <div class="nav-link active" id="menu" ngbDropdownToggle>
                 <img src="assets/avatar/80079.jpg" class="menu-image"> 
-                <span>Mateus <span class="d-none d-sm-inline">Teixeira</span></span>
+                <span>{{user.name}} <span class="d-none d-sm-inline">{{user.lastname}}</span></span>
             </div>
             <div class="dropdown-menu" ngbDropdownMenu>
                 <a class="dropdown-item" href="#">Configurações</a>

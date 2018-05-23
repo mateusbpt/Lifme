@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Passion+One');
 
 
+body {
+    background-color: rgba(220,220,220,0.5);
+}
+
 .title-page {
     font-size:  30px;
     color: #343a40;
@@ -65,3 +69,15 @@
 .dropdown-item {
     font-size: 1.3em;
 }
+
+ .text-card {
+   color: rgba(255,255,255,0.5);
+ }
+
+ .no-border {
+     border: none;
+ }
+
+ .carousel {
+     position: initial;
+ }
