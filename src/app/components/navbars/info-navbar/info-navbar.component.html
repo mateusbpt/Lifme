@@ -1,7 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <ul class="nav navbar-nav flex-fill justify-content-md-center">
-      <li class="nav-item">
-          <a class="title-page" routerLink="/">LIFME</a>
-      </li>
+<nav class="navbar navbar-light bg-light">
+    <ul class="nav navbar-nav">
+        <li class="nav-item">
+            <a class="title-page navbar-brand" routerLink="/">LIFME</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav align-items-end">
+        <li class="nav-item" ngbDropdown>
+            <div class="nav-link active" id="menu" ngbDropdownToggle>
+                <img src="assets/avatar/80079.jpg" class="menu-image"> 
+                <span>Mateus <span class="d-none d-sm-inline">Teixeira</span></span>
+            </div>
+            <div class="dropdown-menu" ngbDropdownMenu>
+                <a class="dropdown-item" href="#">Configurações</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sair</a>
+            </div>
+        </li>
     </ul>
 </nav>
